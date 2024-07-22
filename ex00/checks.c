@@ -22,20 +22,20 @@ int	check(char *string)
 		if (string[i] == string[i + 4] && (string[i] != '2'))
 		{
 			write(1, "No hay solución. Pruebe otros números.\n", 57);
-			return (1);
+			return (0);
 		}
 		if ((string[i] == '4' && string[i + 4] != '1')
 			|| string[i + 4] == '4' && string[i] != '1' || string[i] > '4'
 			|| string[i + 4] > '4' || string[i] < '1' || string[i + 4] < '1')
 		{
 			write(1, "No hay solución. Pruebe otros números.\n", 57);
-			return (1);
+			return (0);
 		}
 		i++;
 		if (i == 3)
 			i = 8;
 	}
-	return (0);
+	return (1);
 }
 
 int	check_repeated_rows(char matrix[4][4])

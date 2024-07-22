@@ -24,9 +24,9 @@ int	ft_strlen(char *str)
 
 char	*clean_input(char *inputstring)
 {
-	int	i;
-	int	j;
-	int	len;
+	int		i;
+	int		j;
+	int		len;
 	char	*cleanstring;
 
 	i = 0;

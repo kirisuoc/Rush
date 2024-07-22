@@ -13,7 +13,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 
-int	check(char *string);
+int		check(char *string);
 char	*clean_input(char *inputstring);
 void	fill_hints(char matrix[4][4], char *string);
 void	ft_print_array2d(char array[4][4]);
@@ -21,7 +21,7 @@ void	ft_print_array2d(char array[4][4]);
 int	main(int ac, char **inputstring)
 {
 	char	matrix[4][4];
-	int	valid_input;
+	int		valid_input;
 	char	*string;
 
 	if (ac != 2)
